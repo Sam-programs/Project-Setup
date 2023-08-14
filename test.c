@@ -19,6 +19,7 @@ void testentry(int argc,char **argv){
   printf(COL_GRN "%d" COL_CLR " Tested | ",testcount);
   printf(COL_GRN "%d" COL_CLR " Passed | ",testcount - failed);
   printf(COL_RED "%d" COL_CLR " Failed   ",failed);
+  printf(BOLD_CLR);
   printf("\n");
   exit(0);
 }

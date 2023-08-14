@@ -3,7 +3,7 @@
 #include <stdio.h>
 //provides xassert
 #include "test.h"
-//you just put xassert(expression) to test if an expression is true 
+//you just put Test(expression) to test if an expression is true 
 //and include headers from src/*
 void run_tests(void){
  //Test(true, "should pass");

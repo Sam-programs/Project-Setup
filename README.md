@@ -7,5 +7,3 @@ the default compiler is clang and debugger lldb
 default compile flags:  
 -g -Wall -Wextra -Werror -pedantic -Wshadow -Wno-unused-parameter -Wno-error=unused-variable  
 u can change them in the Makefile
-
-the goal of this is being as small as possible while providing nessarry features

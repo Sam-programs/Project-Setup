@@ -27,7 +27,7 @@ testcode:test
 
 release: CFLAGS:=$(CFLAGS) -O2
 release: clean
-release: $(BIN)
+release: $(BIN) testcode
 
 debug: $(BIN) testcode
 debug:

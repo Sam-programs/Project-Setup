@@ -1,7 +1,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
-//provides xassert
+//provides the Test macro
 #include "test.h"
 //you just put Test(expression) to test if an expression is true 
 //and include headers from src/*

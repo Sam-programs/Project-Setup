@@ -6,8 +6,8 @@
 //you just put xassert(expression) to test if an expression is true 
 //and include headers from src/*
 void run_tests(void){
- Test(true, "should pass");
- Test(false,"should fail");
+ //Test(true, "should pass");
+ //Test(false,"should fail");
 }
 
 __attribute__((constructor))

@@ -44,4 +44,5 @@ $(BIN):$(objfiles) test
 
 clean:
 	rm -f $(OBJPATH)/*.o
+	rm -f ./test
 

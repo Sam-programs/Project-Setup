@@ -16,6 +16,7 @@ objfiles:=$(cfiles:%.c=obj/%.o)
 
 .PHONY: clean run all debug release testcode
 
+all:CFLAGS:=$(CFLAGS) -DDEBUG
 all:$(OBJPATH) run testcode
 run:$(BIN)
 	./$(BIN)
@@ -29,6 +30,8 @@ release: CFLAGS:=$(CFLAGS) -O2
 release: clean
 release: $(BIN) testcode
 
+debug: CFLAGS:=$(CFLAGS) -DDEBUG
+debug: clean
 debug: $(BIN) testcode
 debug:
 	$(DEBUGGER) $(BIN)

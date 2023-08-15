@@ -8,10 +8,10 @@ default compile flags:
 -g -Wall -Wextra -Werror -pedantic -Wshadow -Wno-unused-parameter -Wno-error=unused-variable  
 u can change them in the Makefile  
 
-# Testing Function
-## Test(expression,error message) test if an expression is true 
+# Testing Functions
+## Test(expression,error message)
 if expression is false the test fails  
-error messages is a string and is printed when a test fails  
+error messages is the string that gets printed when a test fails  
 
 ## TimeLimit(sec,milsec)
 if a test takes more than sec seconds and milsec milliseconds a warning is given   

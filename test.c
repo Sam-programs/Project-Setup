@@ -2,13 +2,7 @@
 #include <stdio.h>//printf
 #include "test.h"//Test Macro
 #include <unistd.h>//sleep
-//Test(expression,error message) test if an expression is true 
-//if expression is false the test fails
-//error messages is a string and is printed when a test fails
-
-//TimeLimit(sec,milsec)
-//if a test takes more than sec seconds and milsec miliseconds a warning is given 
-//if sec is set to -1 no warning is given
+                   
 void run_tests(void){
  //example tests:
  Test(10 == -1,"should fail");

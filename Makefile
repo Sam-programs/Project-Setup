@@ -11,8 +11,8 @@ ifndef VERBOSE
 .SILENT:
 endif
 
-cfiles:=$(shell /usr/bin/ls src | /usr/bin/grep -F ".c")
-objfiles:=$(cfiles:%.c=obj/%.o)
+cfiles:=$(shell echo src/*.c)
+objfiles:=$(cfiles:src/%.c=obj/%.o)
 
 .PHONY: clean run all debug release testcode
 

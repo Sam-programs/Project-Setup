@@ -17,3 +17,13 @@ error messages is the string that gets printed when a test fails
 if a test takes more than sec seconds and milsec milliseconds a warning is given   
 if sec is set to -1 no warning is given  
 
+# Make Targets
+## all(default)
+   runs the code then tests it  
+   doesn't test if the program aborts(unless --ignore-errors is passed to make)  
+## testcode
+    tests the code  
+## debug 
+    recompiles then launchs a debugger with the program
+## release 
+    recompiles with -O2

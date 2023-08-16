@@ -21,7 +21,7 @@ all:$(OBJPATH) run testcode
 run:$(BIN)
 	./$(BIN)
 test:test.c
-	 $(CC) $(CFLAGS) $(objfiles) test.c -o test  -Wno-gnu-zero-variadic-macro-arguments
+	 $(CC) $(CFLAGS) $(objfiles) test.c -o test  
 testcode:test
 	./test
 	

@@ -12,10 +12,12 @@
 // col a string from color escape code
 // rest of arguments are passed into a new printf call
 // then a new line is printed
+
 #define printline(header, col, ...)                                            \
   printf("[" col BOLD header COL_BOLD_CLR "] ");                               \
   printf(__VA_ARGS__);                                                         \
   printf("\n")
+#define logvar(var,fmt) printline(#var,COL_YLW,fmt,var);
 #ifdef DEBUG
 #define xassert(Expr, ErrMsg)                                                  \
   if (!(Expr)) {                                                               \
@@ -23,7 +25,7 @@
     printline("File", COL_BLU, "%s", __FILE__);                                \
     printline("Line", COL_BLU, "%d", __LINE__);                                \
     printline("Expr", COL_YLW, "%s", #Expr);                                   \
-    abort();\
+    _exit(1);\
 }
 #else
 #define xassert(Expr, ErrMsg) ;

@@ -21,7 +21,7 @@ all:$(OBJPATH) run testcode
 run:$(BIN)
 	./$(BIN)
 test:test.c
-	 $(CC) $(CFLAGS) $(objfiles) test.c -o test  
+	 $(CC) $(CFLAGS) $(objfiles) $(LDFLAGS) test.c -o test  
 testcode:test
 	./test
 	
